@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!---Font Awesome icons-->
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <title>Search|Weather</title>
+
+</head>
+<body>
+    <section class = "main">
+        <div class="head-image">
+            <!---Image changes with weather-->
+            <h1>Weather</h1>
+            <h2 id="headtownDisp"></h2>
+        </div>
+        <div class="search-area">
+            <div class="search-box">
+                <input type="text" name="location" id="searchLoc">
+            </div>
+            <div class="load-anim">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+                <div class="circle5"></div>
+            </div>
+        </div>
+        <div class="controls">
+            <div class="compare-control">
+                <span>Compare</span>
+                <div id="compswitch" class="switch">
+                    <div class="toggle">
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-controls">
+                <i id="left" class="fas fa-chevron-left"></i>
+                <i id="right" class="fas fa-chevron-right"></i>    
+            </div>
+        </div>
+        <div class="forecast-display">
+            <!--Card starts here-->
+            <div class="forecastCard">
+                <h6>Today</h6>
+                <div class="card">
+                    <div class="card-header">
+                        <span>Temperature</span>
+                        <h3 id="temperature">24°C/<br>
+                            32°C</h3>
+                        <span id="daydesc">Sunny</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="humidity">
+                            <h5>Humidity</h5>
+                            <h4>test</h4>
+                        </div>
+                        <div class="wind-speed">
+                            <h5>Wind Speed</h5>
+                            <h4>test</h4>
+                        </div>
+                        <div class="pressure">
+                            <h5>Pressure</h5>
+                            <h4>test</h4>
+                        </div>
+                        <div class="sunrise">
+                            <h5>Sunrise</h5>
+                            <h4>test</h4>
+                        </div>
+                        <div class="sunset">
+                            <h5>Sunset</h5>
+                            <h4>test</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Card ends here-->
+        </div>
+    </section>
+    <section class="compare">
+        <i id = "close-compare" class = "fas fa-times-circle"></i>
+        <div class="compare-slider empty">
+            <i id="left-compare" class="fas fa-chevron-left"></i>
+            <h3 id="comp-scroll-day">Monday</h3>
+            <i id="right-compare" class="fas fa-chevron-right"></i> 
+        </div>
+        <div class="compare-body">
+            <h5 id="spotone-place"></h5>
+            <div class="spot space-one empty">
+                <div class="compare-card">
+                    <div class="comp-card-body">
+                        <div class="comp-temp">
+                            <h5>Temperature</h5>
+                            <h4>24 C / 33 C</h4>
+                        </div>
+                        <div class="comp-mid">
+                            <div class="comp-humidity">
+                                <h5>Humidity</h5>
+                                <h4>test</h4>
+                            </div>
+                            <div class="comp-wind">
+                                <h5>Wind Speed</h5>
+                                <h4>test</h4>
+                            </div>
+                            <div class="comp-pressure">
+                                <h5>Pressure</h5>
+                                <h4>test</h4>
+                            </div>
+                        </div>
+                        <div class="comp-footer">
+                            <div class="comp-sunrise">
+                                <img src="images/sunrise.png" alt= "sunrise">
+                                <span>6:30 a.m</span>
+                            </div>
+                            <div class="comp-sunset">
+                                <img src="images/sunset.png" alt= "sunset">
+                                <span>5:30 p.m</span>
+                            </div>
+                        </div>
+                    </div>         
+                </div>
+            </div>
+            <h5 id="spottwo-place"></h5>
+            <div class="spot space-two empty">
+                <div class="compare-card">
+                    <div class="comp-card-body">
+                        <div class="comp-temp">
+                            <h5>Temperature</h5>
+                            <h4>24 C / 33 C</h4>
+                        </div>
+                        <div class="comp-mid">
+                            <div class="comp-humidity">
+                                <h5>Humidity</h5>
+                                <h4>test</h4>
+                            </div>
+                            <div class="comp-wind">
+                                <h5>Wind Speed</h5>
+                                <h4>test</h4>
+                            </div>
+                            <div class="comp-pressure">
+                                <h5>Pressure</h5>
+                                <h4>test</h4>
+                            </div>
+                        </div>
+                        <div class="comp-footer">
+                            <div class="comp-sunrise">
+                                <img src="images/sunrise.png" alt= "sunrise">
+                                <span>6:30 a.m</span>
+                            </div>
+                            <div class="comp-sunset">
+                                <img src="images/sunset.png" alt= "sunset">
+                                <span>5:30 p.m</span>
+                            </div>
+                        </div>
+                    </div>         
+                </div>
+            </div>
+            <div class="clear empty">
+                <span>Clear</span>
+            </div>
+            <div class="comp-empty-state">
+                <div class="space-one-empty">
+                    <h1>1</h1>
+                </div>
+                <div class="space-two-empty">
+                    <h1>2</h1>
+                </div>
+            </div>          
+        </div>
+        <div class="open-tab">
+            <i class="fas fa-caret-right"></i>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="index.js"></script> 
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDOPgg9FOiL8R738zxz2G5tw6g2zN88uI&libraries=places&callback=initAutocomplete">
+    </script>
+</body>
+</html>
