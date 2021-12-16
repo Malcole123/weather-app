@@ -183,6 +183,7 @@ html{
     transform:translateY(-10px);
     padding:3px; 
     display:flex;
+    
 }
 .toggle{
     width:30px;
@@ -190,6 +191,7 @@ html{
     background:var(--btn-col);
     border-radius:25px;
     transition: 0.3s ease-in-out;
+    cursor:pointer
 
 }
 .active{
@@ -284,6 +286,7 @@ html{
 
 .open{
     left:0;
+    cursor:pointer;
 }
 .open .fa-caret-right{
     transform: rotate(180deg);
