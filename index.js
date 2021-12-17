@@ -60,7 +60,7 @@ function initAutocomplete() {
         document.getElementById('searchLoc'),{
             types: ['(cities)'],
             componentRestrictions:{
-                'country':['JM','CU','TT']
+                'country':['JM','CU','TT','US']
             },
             fields:['name']
         });
